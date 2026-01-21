@@ -1,8 +1,9 @@
-# Logo
+
 <div align="center"> <h1>Digital Representation of the Apple iPhone Logo</h1> </div>
+
 ### Project Description
 
-### This project focuses on the digital recreation of the Apple iPhone logo using several computer graphics methods. The main objective was to explore how different graphic techniques affect visual quality, scalability, and usability in digital media. By applying multiple approaches, the project demonstrates how the same logo can be represented in various graphical forms.
+This project focuses on the digital recreation of the Apple iPhone logo using several computer graphics methods. The main objective was to explore how different graphic techniques affect visual quality, scalability, and usability in digital media. By applying multiple approaches, the project demonstrates how the same logo can be represented in various graphical forms.
 
 ### Vector and Raster Graphics Implementation
 One version of the logo was produced using vector graphics, allowing the image to remain sharp and clear at any size. This makes vector formats especially suitable for responsive web design and high-resolution displays.
