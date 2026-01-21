@@ -1,0 +1,60 @@
+
+<!DOCTYPE html>
+<html lang="sl">
+<head>
+    <meta charset="UTF-8">
+    <title>Moj Logo</title>
+</head>
+<body>
+
+<div>
+    <canvas id="logo" width="600" height="400"></canvas>
+</div>
+
+<script>
+const canvas = document.getElementById("logo");
+const ctx = canvas.getContext("2d");
+
+// reset (zelo pomembno)
+ctx.setTransform(1, 0, 0, 1, 0, 0);
+ctx.clearRect(0, 0, canvas.width, canvas.height);
+
+// skaliranje + centriranje
+ctx.translate(50, 50);
+ctx.scale(0.15, 0.15);
+
+ctx.beginPath();
+
+// --- LOGO ---
+ctx.moveTo(2696, 734);
+ctx.bezierCurveTo(2559, 793, 2448, 969, 2465, 1149);
+ctx.bezierCurveTo(2459, 1314, 2603, 1483, 2749, 1543);
+ctx.bezierCurveTo(2739, 1645, 2516, 1998, 2453, 2016);
+ctx.bezierCurveTo(2359, 2118, 2198, 2092, 2102, 2049);
+ctx.bezierCurveTo(1994, 1995, 1869, 1996, 1727, 2056);
+ctx.bezierCurveTo(1598, 2120, 1480, 2102, 1382, 2004);
+ctx.bezierCurveTo(1171, 1795, 1011, 1407, 1025, 1159);
+ctx.bezierCurveTo(1005, 948, 1117, 620, 1454, 539);
+ctx.bezierCurveTo(1605, 507, 1766, 600, 1906, 622);
+ctx.bezierCurveTo(1954, 618, 2216, 486, 2367, 535);
+ctx.bezierCurveTo(2471, 540, 2665, 656, 2696, 734);
+ctx.closePath();
+
+ctx.moveTo(1887, 526);
+ctx.bezierCurveTo(1986, 533, 2109, 483, 2204, 376);
+ctx.bezierCurveTo(2307, 254, 2324, 147, 2317, 38);
+ctx.bezierCurveTo(2207, 56, 2127, 79, 2003, 198);
+ctx.bezierCurveTo(1911, 301, 1873, 434, 1887, 526);
+ctx.closePath();
+
+// stil
+ctx.fillStyle = "#000";          // barva notranjosti
+ctx.fill("evenodd");             // pravilno zapolni luknje
+
+ctx.lineWidth = 20;
+ctx.strokeStyle = "#000";        // barva obrobe
+ctx.stroke();
+</script>
+
+</body>
+</html>
